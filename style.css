@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: rgb(255, 107, 107);
+  position: sticky;
+  top: 0px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: #ffd93d;
+}
+
+html {
+  font-size: 120%;
+}
+@import url("https://fonts.googleapis.com/css2?family=Anek+Odia&display=swap");
+
+@font-face {
+  font-family: "Anek Odia", sans-serif;
+  src: url("assets/font/AnekOdia-Regular.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("assets/font/Quicksand-Bold.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  font-family: "Anek Odia", sans-serif;
+  src: url("assets/font/AnekOdia-Regular.ttf");
+  font-size: 40px;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  list-style: none;
+}
+
+li {
+  padding: 3px;
+  margin: 3px;
+}
+
+.producto {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.precio {
+  color: grey;
+  font-size: 22px;
+}
+
+.producto button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.producto button:hover {
+  opacity: 0.7;
+}
+
+.sale-zone {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.producto-title {
+  display: flex;
+  justify-content: center;
+  font-family: "Anek Odia", sans-serif;
+  src: url("assets/font/AnekOdia-Regular.ttf");
+  font-weight: 100;
+  font-style: bold;
+  border: black solid 4px;
+  background-color:rgb(107, 203, 119) ;
+}
+
+.body-contactos {font-family: Arial, Helvetica, sans-serif;}
+.contacto-map {
+display: flex;
+justify-content: center;}
+
+.contacto-title {
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.nosotros-title{ 
+  display: flex;
+  justify-content: center;
+  font-family: "Anek Odia", sans-serif;
+  src: url("assets/font/AnekOdia-Regular.ttf");
+  font-weight: 100;
+  font-style: bold;
+  border: black solid 4px;}
+
+.nosotros-subtitle{display: flex;
+  justify-content: center;
+  font-family: "Anek Odia", sans-serif;
+  src: url("assets/font/AnekOdia-Regular.ttf");
+  font-weight: 80;}
+
+.nosotros-p{
+  display: flex;
+  justify-content: center;
+  font-family: "Anek Odia", sans-serif;
+  src: url("assets/font/AnekOdia-Regular.ttf");
+  font-weight: 80;
+}
+
+.footer-menu {
+  display: flex;
+  background-color: rgb(77, 150, 255);
+  justify-content: center;
+  padding: auto;
+  font-size: 20px;
+  list-style: none;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.store-titulo {
+  color: #444;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+  padding: 20px;
+}
+
+/* galeria */
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 300px;
+  gap: 15px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-box-shadow: 10px 11px 12px -8px rgba(212, 188, 47, 0.36);
+  -moz-box-shadow: 10px 11px 12px -8px rgba(212, 188, 47, 0.36);
+  box-shadow: 10px 11px 12px -8px rgba(212, 188, 47, 0.36);
+}
+
+.gallery-item {
+  position: relative;
+}
+
+.gallery-title {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.656);
+  width: 100%;
+  padding: 5px 0;
+  font-weight: 200;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+/* mobile */
+@media (max-width:450px) {
+ 
+  .gallery-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: 220px;
+  }
+
+  .store-titulo {
+      font-size: 22px;
+  }
+
+  .gallery-title {
+      display: none;
+  }
+
+  .gallery-item{
+      grid-column: span 1;
+      grid-row: span 1;
+  }
+
+  .navbar {
+  background-color: rgb(255, 107, 107);
+  position: auto;
+  top: 0px;
+  padding: auto;
+  justify-content: center;
+  flex-wrap: auto;
+  }
+  .menu {
+    font-family: "Anek Odia", sans-serif;
+    src: url("assets/font/AnekOdia-Regular.ttf");
+    font-size: auto;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-left: auto;
+    list-style: none;
+  }
+
+
+
+
+
+}
+
+/* tablet */
+@media (min-width:451px) and (max-width:960px) {
+
+  .gallery-container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 220px;
+  }
+
+  .gallery-item{
+      grid-column: span 1;
+      grid-row: span 1;
+  }
+
+  .img-9{
+      display: none;
+  }
+
+  .store-titulo{
+      font-size: 22px;
+  }
+
+  .gallery-title{
+      font-size: 18px;
+  }
+}
