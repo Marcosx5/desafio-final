@@ -5,11 +5,13 @@
 
 .navbar {
   background-color: rgb(255, 107, 107);
-  position: sticky;
+  position: auto;
   top: 0px;
   padding: 20px;
-  display: flex;
+  display: block;
+  width: 100%;
   justify-content: center;
+  overflow: hidden;
 }
 
 body {
@@ -45,6 +47,7 @@ a {
   width: auto;
   height: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding-left: 20px;
   list-style: none;
@@ -59,6 +62,7 @@ li {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
+  padding: 10px;
   text-align: center;
   font-family: arial;
 }
@@ -86,11 +90,14 @@ li {
 
 .sale-zone {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   padding: 30px;
+  object-fit: cover;
 }
 .producto-title {
   display: flex;
+  flex-shrink: inherit;
   justify-content: center;
   font-family: "Anek Odia", sans-serif;
   src: url("assets/font/AnekOdia-Regular.ttf");
@@ -98,6 +105,9 @@ li {
   font-style: bold;
   border: black solid 4px;
   background-color:rgb(107, 203, 119) ;
+}
+.texto-producto {
+  overflow: hidden;
 }
 
 .body-contactos {font-family: Arial, Helvetica, sans-serif;}
